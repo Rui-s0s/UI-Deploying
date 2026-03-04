@@ -4,7 +4,7 @@
  */
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
-	"name": "ui-proyect",
+	"name": "p-static-ui",
 	"compatibility_date": "2026-03-01",
 	"assets": {
 		// The path to the directory containing the `index.html` file to be served at `/`
