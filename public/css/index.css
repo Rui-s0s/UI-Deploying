@@ -5,11 +5,18 @@ body {
 	text-align: center;
 	margin: 0;
 	min-height: 100vh;
-	margin-top: 5rem;
+	display: flex;
+	flex-direction: column;
 }
 
-html {
-	font-size: 100%;
+header {
+	margin: 5rem auto 0;
+	max-width: 1200px;
+	width: 100%;
+	padding: 0 20px;
+	box-sizing: border-box;
+	font-size: 2rem;
+	text-align: left;
 }
 
 main {
@@ -18,9 +25,10 @@ main {
 	align-items: center;
 	width: 100%;
 	margin: 0 auto;
+	flex: 1;
 }
 
-main > div {
+main>div {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -37,8 +45,10 @@ figure {
 pre {
 	margin: 0;
 	font-family: "Courier New", Courier, monospace;
-	font-size: 1rem;
-	line-height: 1.1;
+	font-size: 1.1rem;
+	line-height: 1.1rem;
+	letter-spacing: -1px;
+	padding-left: -10px;
 	color: #004a99;
 	white-space: pre;
 	text-align: left;
@@ -59,14 +69,17 @@ h1 {
 nav {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 10px;
+	gap: 5px;
+	max-width: 500px;
 }
 
 nav a {
 	color: #0e0e85;
 	text-decoration: none;
 	font-weight: bold;
-	font-size: 1.1rem;
+	font-size: 2rem;
+	padding: 5px 15px;
+	transition: all 0.2s ease;
 }
 
 nav a:hover {
@@ -82,12 +95,12 @@ footer {
 }
 
 @media (max-width: 900px) {
-	main > div {
+	main>div {
 		flex-direction: column;
 		gap: 30px;
 	}
 
-	body {
+	header {
 		margin-top: 2rem;
 	}
 
