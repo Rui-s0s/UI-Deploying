@@ -45,8 +45,10 @@ figure {
 pre {
 	margin: 0;
 	font-family: "Courier New", Courier, monospace;
+	font-weight: bold;
+	text-shadow: 0 0 1px #004a90;
 	font-size: 1.1rem;
-	line-height: 1.1rem;
+
 	letter-spacing: -1px;
 	padding-left: -10px;
 	color: #004a99;
