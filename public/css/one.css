@@ -1,0 +1,34 @@
+body {
+	font-family: 'Courier New', Courier, monospace;
+	line-height: 1.5;
+	max-width: 800px;
+	margin: 2rem auto;
+	padding: 2rem;
+	background-color: #1a1a1a;
+	color: #e0e0e0;
+}
+
+h1 {
+	color: #ff4757;
+	border-bottom: 2px solid #ff4757;
+	padding-bottom: 10px;
+}
+
+p {
+	font-size: 1.1rem;
+}
+
+a {
+	color: #ffa502;
+	text-decoration: none;
+	display: inline-block;
+	margin-top: 20px;
+	border: 1px solid #ffa502;
+	padding: 5px 15px;
+	border-radius: 5px;
+}
+
+a:hover {
+	background: #ffa502;
+	color: #1a1a1a;
+}
