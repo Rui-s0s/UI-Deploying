@@ -48,7 +48,6 @@ pre {
 	font-weight: bold;
 	text-shadow: 0 0 1px #004a90;
 	font-size: 1.1rem;
-
 	letter-spacing: -1px;
 	padding-left: -10px;
 	color: #004a99;
@@ -78,8 +77,7 @@ nav {
 nav a {
 	color: #0e0e85;
 	text-decoration: none;
-	font-weight: bold;
-	font-size: 2rem;
+	font-size: 2.4rem;
 	padding: 5px 15px;
 	transition: all 0.2s ease;
 }

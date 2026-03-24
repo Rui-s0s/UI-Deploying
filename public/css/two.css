@@ -1,29 +1,29 @@
 body {
-	font-family: Georgia, 'Times New Roman', Times, serif;
-	line-height: 1.7;
-	max-width: 800px;
-	margin: 2rem auto;
-	padding: 2rem;
-	background-color: #f1f8e9;
-	color: #2e7d32;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  line-height: 1.7;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #f1f8e9;
+  color: #2e7d32;
 }
 
 h1 {
-	color: #1b5e20;
-	text-transform: uppercase;
-	letter-spacing: 2px;
+  color: #1b5e20;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 p {
-	font-style: italic;
+  font-style: italic;
 }
 
 a {
-	color: #388e3c;
-	text-decoration: underline;
-	font-weight: bold;
+  color: #388e3c;
+  text-decoration: underline;
+  font-weight: bold;
 }
 
 a:hover {
-	color: #1b5e20;
+  color: #1b5e20;
 }
