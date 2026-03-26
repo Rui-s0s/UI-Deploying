@@ -1,0 +1,20 @@
+import { FC } from 'hono/jsx'
+
+const Three: FC = () => {
+    return (
+        <html lang="en">
+            <head>
+                <meta charset="UTF-8" />
+                <title>Page Three</title>
+                <link rel="stylesheet" href="/css/three.css" />
+            </head>
+            <body>
+                <h1>Page Three</h1>
+                <p>This is the third page.</p>
+                <a href="/">Back to Home</a>
+            </body>
+        </html>
+    )
+}
+
+export default Three
