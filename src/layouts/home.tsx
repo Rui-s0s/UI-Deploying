@@ -29,7 +29,7 @@ const Home: FC = () => {
             <head>
                 <meta charset="UTF-8" />
                 <title>Paragraph JSX</title>
-                <link rel="stylesheet" href="/css/index.css" />
+                <link rel="stylesheet" href="/src/css/home.css" />
             </head>
             <body>
                 <header>
