@@ -13,7 +13,7 @@ const Two: FC = () => {
                 <main>
                     <div class="content-wrapper">
                         <h1>Paragraph</h1>
-                        <p class="font-bold bg-blue-200 p-4 rounded-lg shadow-inner">Welcome to the new Paragraph.</p>
+                        <p class="welcome-banner">Welcome to the new Paragraph.</p>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quod animi asperiores laudantium doloremque molestiae consequuntur hic voluptatibus, maxime nesciunt eaque ea eius, vel dolor. Accusamus atque rem blanditiis quibusdam!
                         </p>
