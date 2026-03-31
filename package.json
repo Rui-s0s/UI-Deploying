@@ -8,7 +8,6 @@
 		"start": "wrangler dev src/index.tsx --live-reload"
 	},
 	"dependencies": {
-		"@tailwindcss/vite": "^4.2.2",
 		"hono": "^4.12.9"
 	},
 	"devDependencies": {
@@ -16,7 +15,6 @@
 		"@hono/vite-dev-server": "^0.25.1",
 		"autoprefixer": "^10.4.27",
 		"postcss": "^8.5.8",
-		"tailwindcss": "^4.2.2",
 		"vite": "^8.0.3",
 		"wrangler": "^4.70.0"
 	}
