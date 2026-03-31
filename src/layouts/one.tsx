@@ -7,7 +7,7 @@ const One: FC = () => {
                 <meta charset="UTF-8" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <title>FAQ - Paragraph</title>
-                <link rel="stylesheet" href="/public/css/one.css" />
+                <link rel="stylesheet" href="/css/one.css" />
             </head>
             <body>
                 <main>
