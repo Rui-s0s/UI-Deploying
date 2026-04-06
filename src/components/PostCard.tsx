@@ -1,21 +1,42 @@
 import { Post } from '../types';
 
-export const PostCard = ({ post }: { post: Post }) => (
-    <a href={`/four/${post.id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
-        <div class="post-card" style={{
-            padding: '15px',
-            borderBottom: '1px solid #eff3f4',
-            display: 'flex',
-            flexDirection: 'column'
-        }}>
-            <div style={{ display: 'flex', gap: '5px', marginBottom: '5px' }}>
-                <strong>{post.author}</strong>
-                <span style={{ color: '#536471' }}>@{post.handle} · {post.timestamp}</span>
+export const ParagraphPostCard = ({ post }: { post: Post }) => {
+    const stars = '★'.repeat(post.rating || 0) + '☆'.repeat(5 - (post.rating || 0));
+
+    return (
+        <article class="paragraph-post-card">
+            <div class="post-media">
+                <img 
+                    src={post.imageUrl || "https://via.placeholder.com/300"} 
+                    alt={post.content}
+                />
             </div>
-            <div style={{ fontSize: '15px', lineHeight: '20px' }}>{post.content}</div>
-            <div style={{ marginTop: '10px', color: '#536471', fontSize: '13px' }}>
-                ♥ {post.likes} Likes
+            <div class="post-content">
+                <div class="post-header">
+                    <span class="post-id">ID: {post.id}</span>
+                    <span class="post-rating">{stars}</span>
+                </div>
+                <div class="post-body">
+                    {post.content}
+                </div>
+                <div class="post-actions">
+                    <button>Reply</button>
+                    <div class="star-rating-input">
+                        {[5, 4, 3, 2, 1].map((num) => (
+                            <>
+                                <input 
+                                    type="radio" 
+                                    id={`star-${num}-${post.id}`} 
+                                    name={`rating-${post.id}`} 
+                                    value={num} 
+                                    checked={post.rating === num}
+                                />
+                                <label for={`star-${num}-${post.id}`}>★</label>
+                            </>
+                        ))}
+                    </div>
+                </div>
             </div>
-        </div>
-    </a>
-);
+        </article>
+    );
+};
