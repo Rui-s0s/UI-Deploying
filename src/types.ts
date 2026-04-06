@@ -5,6 +5,8 @@ export interface Post {
     content: string;
     timestamp: string;
     likes: number;
+    imageUrl?: string;
+    rating?: number;
 }
 
 export interface Comment {
