@@ -9,10 +9,20 @@ body {
 	flex-direction: column;
 }
 
+header {
+	margin: 2rem auto 0;
+	max-width: 1200px;
+	width: 100%;
+	padding: 0 20px;
+	box-sizing: border-box;
+	font-size: 2rem;
+	text-align: left;
+}
+
 main {
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-start;
 	width: 100%;
 	margin: 0 auto;
 	flex: 1;
@@ -31,10 +41,139 @@ h1 {
 	color: #800000;
 }
 
-p {
-	font-size: 1.2rem;
-	line-height: 1.6;
-	margin-bottom: 30px;
+/* Filter Form Styles */
+.search-filter-form {
+    background: #fffdf0;
+    border: 1px solid #d3d3af;
+    padding: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.search-filter-form input, 
+.search-filter-form select {
+    padding: 8px;
+    border: 1px solid #d3d3af;
+    background: white;
+    color: #800000;
+    font-family: inherit;
+}
+
+.search-filter-form button {
+    background: #800000;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.search-filter-form button:hover {
+    background: #ff0000;
+}
+
+/* Post Card Styles (Paragraph Aesthetic) */
+.paragraph-post-card {
+    display: flex;
+    background: #fffdf0;
+    border: 1px solid #d3d3af;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.post-media {
+    width: 30%;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    border-right: 1px solid #d3d3af;
+}
+
+.post-media img {
+    width: 100%;
+    height: 100%;
+    object-cover: cover;
+}
+
+.post-content {
+    width: 70%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.post-id {
+    background: #f5f5dc;
+    color: #0e0e85;
+    padding: 2px 6px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border: 1px solid #d3d3af;
+}
+
+.post-rating {
+    color: #800000;
+}
+
+.post-body {
+    margin: 0 0 15px 0;
+    line-height: 1.4;
+    font-size: 1rem;
+}
+
+.post-actions {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.star-rating-input {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.star-rating-input input {
+    display: none;
+}
+
+.star-rating-input label {
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #ccc;
+    transition: color 0.1s;
+    line-height: 1;
+}
+
+.star-rating-input label:hover,
+.star-rating-input label:hover ~ label,
+.star-rating-input input:checked ~ label {
+    color: #800000;
+}
+
+.post-actions button {
+    background: transparent;
+    border: none;
+    color: #0e0e85;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.post-actions button:hover {
+    color: #ff0000;
+    text-decoration: underline;
 }
 
 .back-link {
@@ -43,6 +182,7 @@ p {
 	text-decoration: none;
 	font-weight: bold;
 	font-size: 1.1rem;
+    margin-top: 20px;
 }
 
 .back-link:hover {
@@ -59,7 +199,20 @@ footer {
 }
 
 @media (max-width: 900px) {
-	.content-wrapper {
+	header {
+		margin-top: 2rem;
 		text-align: center;
 	}
+	h1 {
+		text-align: center;
+	}
+    .paragraph-post-card {
+        flex-direction: column;
+    }
+    .post-media {
+        width: 100%;
+    }
+    .post-content {
+        width: 100%;
+    }
 }
