@@ -14,30 +14,36 @@ const Two: FC = () => {
             <body>
                 <main>
                     <section class="hero-section">
-                        <div class="hero-title-wrapper">
-                            <h1 class="hero-title">Paragraph</h1>
-                        </div>
+                        <h1 class="hero-title">Paragraph</h1>
+
                         <div class="hero-subtitle-box">
-                            <p>Conectando los mejores oficios con quienes más los necesitan.</p>
+                            <p>Conecta con profesionales de oficios confiables, calificados por la comunidad.</p>
                         </div>
                     </section>
 
                     <section id="about" class="intro-section">
                         <div class="content-wrapper">
                             <h2>Sobre Nosotros</h2>
-                            <p>Paragraph es la plataforma que conecta a usuarios con profesionales de oficios como electricistas, plomeros, albañiles y carpinteros. Encuentra proveedores confiables, solicita servicios, revisa calificaciones reales y forma parte de una comunidad donde las experiencias se comparten y ayudan a tomar mejores decisiones.</p>
+                            <p>Paragraph es la plataforma que conecta a usuarios con profesionales de oficios como electricistas, plomeros, albañiles y carpinteros, facilitando el acceso a servicios confiables y de calidad en un solo lugar. A través de una interfaz simple e intuitiva, puedes encontrar proveedores verificados, solicitar servicios según tus necesidades específicas, comparar opciones y revisar calificaciones reales basadas en experiencias de otros usuarios. Además, Paragraph promueve una comunidad activa donde las personas pueden compartir reseñas, recomendar profesionales y generar confianza a partir de la transparencia y la interacción. Ya sea para resolver una urgencia o planificar un proyecto a largo plazo, la plataforma te ayuda a tomar decisiones informadas, optimizar tu tiempo y conectar con quienes mejor se adaptan a lo que buscas.</p>
                         </div>
                     </section>
 
                     <div class="second-section-wrapper">
-                        <div class="content-wrapper">
-                            <div class="second-section">
-                                <div class="second-section-image">
-                                </div>
-                                <div class="right-side-column">
-                                    <div class="right-box">Mecánica Certificada</div>
-                                    <div class="right-box">Plomería 24/7</div>
-                                    <div class="right-box">Electricistas de Confianza</div>
+                        <div class="second-section">
+                            <div class="second-section-image">
+                                <img
+                                    src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=800&q=80"
+                                    alt="Profesional trabajando"
+                                />
+                            </div>
+                            <div class="right-side-column">
+                                <div class="right-box-container">
+                                    <div class="main-content">
+                                        Paragraph nace como respuesta a una problemática común: la dificultad de encontrar profesionales de oficios confiables, verificar sus capacidades reales y establecer contacto de manera rápida y segura. En muchos casos, las personas dependen de recomendaciones informales, contactos limitados o información poco clara, lo que genera incertidumbre, pérdida de tiempo y resultados poco satisfactorios. Al mismo tiempo, muchos trabajadores capacitados carecen de una forma efectiva de visibilizar su experiencia, demostrar la calidad de su trabajo y acceder a nuevas oportunidades.
+                                    </div>
+                                    <div class="small-corner-box">
+                                        Frente a esta situación, Paragraph propone una solución que conecta directamente a usuarios con proveedores de servicios, integrando herramientas que permiten evaluar, comparar y elegir con mayor confianza
+                                    </div>
                                 </div>
                             </div>
                         </div>
