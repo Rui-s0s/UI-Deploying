@@ -25,38 +25,21 @@ const Two: FC = () => {
                     <section id="about" class="intro-section">
                         <div class="content-wrapper">
                             <h2>Sobre Nosotros</h2>
-                            <p>Paragraph es el sitio clave para conectarte con cualquier proveedor de servicios y acercarte a la comunidad. Desde plomería hasta mecánica especializada.</p>
+                            <p>Paragraph es la plataforma que conecta a usuarios con profesionales de oficios como electricistas, plomeros, albañiles y carpinteros. Encuentra proveedores confiables, solicita servicios, revisa calificaciones reales y forma parte de una comunidad donde las experiencias se comparten y ayudan a tomar mejores decisiones.</p>
                         </div>
                     </section>
 
                     <div class="second-section-wrapper">
                         <div class="content-wrapper">
                             <div class="second-section">
-                                <div class="title1">
-                                    <div class="title1-overlay">
-                                        "La excelencia en el oficio es la base de una comunidad fuerte y funcional. Encuentra expertos verificados aquí."
-                                    </div>
+                                <div class="second-section-image">
                                 </div>
-
                                 <div class="right-side-column">
                                     <div class="right-box">Mecánica Certificada</div>
                                     <div class="right-box">Plomería 24/7</div>
                                     <div class="right-box">Electricistas de Confianza</div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="featured-posts-wrapper">
-                        <div class="content-wrapper">
-                            <section id="featured_posts">
-                                <h2>Últimos Reportes</h2>
-                                <div class="posts-feed">
-                                    {hardcodedPosts.map(post => (
-                                        <ParagraphPostCard post={post} />
-                                    ))}
-                                </div>
-                            </section>
                         </div>
                     </div>
 
