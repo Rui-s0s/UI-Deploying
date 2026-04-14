@@ -188,29 +188,59 @@ main {
 
 
 .service-card {
-    margin-bottom: 1rem;
-    padding: 1.5rem 2rem;
+    margin-bottom: 2rem;
     background-color: white;
     color: #800000;
     font-weight: 900;
     font-size: 1.8rem;
-
-    text-align: left;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    overflow: hidden;
 
     border-radius: 8px;
     border: 1px solid #d3d3af;
     transition: all 0.2s;
     cursor: pointer;
+    height: 120px;
+}
+
+.service-text {
+    flex: 1;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    text-align: left;
 }
 
 .service-card:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.service-card:nth-child(even) .service-text {
     text-align: right;
+    justify-content: flex-end;
+}
+
+.service-image {
+    width: 200px;
+    overflow: hidden;
+}
+
+.service-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .service-card:hover {
     background-color: #800000;
     color: white;
-    transform: scale(1.05);
+    transform: scale(1.02);
+}
+
+.service-card:hover .service-text {
+    color: white;
 }
 
 .back-link {

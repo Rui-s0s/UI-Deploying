@@ -52,10 +52,30 @@ const Two: FC = () => {
                     <div class="top-services-wrapper">
                         <div class="content-wrapper">
                             <section id="top_services">
-                                <div class="service-card">PNT</div>
-                                <div class="service-card">MK</div>
-                                <div class="service-card">PL</div>
-                                <div class="service-card">ELC</div>
+                                <div class="service-card">
+                                    <div class="service-text">PNT</div>
+                                    <div class="service-image">
+                                        <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=500&q=80" alt="Painting" />
+                                    </div>
+                                </div>
+                                <div class="service-card">
+                                    <div class="service-text">MK</div>
+                                    <div class="service-image">
+                                        <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=500&q=80" alt="Mechanic" />
+                                    </div>
+                                </div>
+                                <div class="service-card">
+                                    <div class="service-text">PL</div>
+                                    <div class="service-image">
+                                        <img src="https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=500&q=80" alt="Plumbing" />
+                                    </div>
+                                </div>
+                                <div class="service-card">
+                                    <div class="service-text">ELC</div>
+                                    <div class="service-image">
+                                        <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=500&q=80" alt="Electrician" />
+                                    </div>
+                                </div>
                             </section>
                         </div>
                     </div>
