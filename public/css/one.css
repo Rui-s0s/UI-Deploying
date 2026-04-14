@@ -42,11 +42,15 @@ h1 {
 }
 
 .faq-item {
-	background: #fffdf0;
+	background: #f5f5dc;
 	border: 1px solid #d3d3af;
 	margin-bottom: 10px;
 	overflow: hidden;
 }
+
+/* .faq-item:nth-child(even) {
+	background: #f8f8e7;
+} */
 
 .faq-toggle {
 	display: none;
@@ -87,13 +91,13 @@ h1 {
 	overflow: hidden;
 }
 
-.faq-toggle:checked ~ .faq-answer {
+.faq-toggle:checked~.faq-answer {
 	max-height: 500px;
 	padding: 10px 20px 20px 20px;
 	border-top: 1px dashed #d3d3af;
 }
 
-.faq-toggle:checked ~ .faq-question .icon::before {
+.faq-toggle:checked~.faq-question .icon::before {
 	content: '[-]';
 }
 
@@ -123,6 +127,7 @@ footer {
 		margin-top: 2rem;
 		text-align: center;
 	}
+
 	h1 {
 		text-align: center;
 	}

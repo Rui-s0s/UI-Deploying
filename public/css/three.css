@@ -67,10 +67,14 @@ h1 {
 /* Post Card Styles (Paragraph Aesthetic) */
 .paragraph-post-card {
     display: flex;
-    background: #fffdf0;
+    background: #f5f5dc;
     border: 1px solid #d3d3af;
     margin-bottom: 10px;
     overflow: hidden;
+}
+
+.paragraph-post-card:nth-child(even) {
+    background: #f8f8e7;
 }
 
 .post-media {
