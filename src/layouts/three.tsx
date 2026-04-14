@@ -12,9 +12,6 @@ const Three: FC = () => {
                 <link rel="stylesheet" href="/css/three.css" />
             </head>
             <body>
-                <header>
-                    Paragraph
-                </header>
                 <main>
                     <div class="content-wrapper">
                         <h1>/mk/ - Mecanica</h1>
