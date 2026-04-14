@@ -188,19 +188,23 @@ main {
 
 
 .service-card {
-    /* The block naturally takes 100% width, but we add margin for spacing */
     margin-bottom: 1rem;
-
     padding: 1.5rem 2rem;
     background-color: white;
     color: #800000;
     font-weight: 900;
     font-size: 1.8rem;
+
     text-align: left;
+
     border-radius: 8px;
     border: 1px solid #d3d3af;
     transition: all 0.2s;
     cursor: pointer;
+}
+
+.service-card:nth-child(even) {
+    text-align: right;
 }
 
 .service-card:hover {
@@ -208,7 +212,6 @@ main {
     color: white;
     transform: scale(1.05);
 }
-
 
 .back-link {
     display: inline-block;
