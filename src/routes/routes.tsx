@@ -7,8 +7,8 @@ import Three from '../layouts/three'
 const routes = new Hono()
 
 routes.get('/', (c) => c.html(<Home />))
-routes.get('/one', (c) => c.html(<One />))
-routes.get('/two', (c) => c.html(<Two />))
-routes.get('/three', (c) => c.html(<Three />))
+routes.get('/faq', (c) => c.html(<One />))
+routes.get('/home', (c) => c.html(<Two />))
+routes.get('/mk', (c) => c.html(<Three />))
 
 export default routes

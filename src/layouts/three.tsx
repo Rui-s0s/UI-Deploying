@@ -2,19 +2,19 @@ import { FC } from 'hono/jsx'
 import { ParagraphPostCard } from '../components/PostCard'
 import { hardcodedPosts } from '../models/posts'
 
-const Three: FC = () => {
+const Mecanica: FC = () => {
     return (
         <html lang="en">
             <head>
                 <meta charset="UTF-8" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                <title>/mk/ - Mecanica</title>
+                <title>Mecanica - Paragraph</title>
                 <link rel="stylesheet" href="/css/three.css" />
             </head>
             <body>
                 <main>
                     <div class="content-wrapper">
-                        <h1 tabindex="0">/mk/ - Mecanica</h1>
+                        <h1 tabindex="0">Mecanica</h1>
 
                         <form action="/search" method="get" class="search-filter-form">
                             <input type="text" name="query" placeholder="Search posts..." required />
@@ -48,4 +48,4 @@ const Three: FC = () => {
     )
 }
 
-export default Three
+export default Mecanica

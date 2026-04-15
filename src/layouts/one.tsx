@@ -1,6 +1,6 @@
 import { FC } from 'hono/jsx'
 
-const One: FC = () => {
+const FAQ: FC = () => {
     return (
         <html lang="es">
             <head>
@@ -13,7 +13,6 @@ const One: FC = () => {
                 <main>
                     <div class="faq-container">
                         <h1>Preguntas Frecuentes</h1>
-
                         <div class="faq-item" tabindex="0" onkeydown="if(event.key === 'Enter') this.querySelector('input').click()">
                             <input type="checkbox" id="faq1" class="faq-toggle" />
                             <label for="faq1" class="faq-question">
@@ -56,4 +55,4 @@ const One: FC = () => {
     )
 }
 
-export default One
+export default FAQ

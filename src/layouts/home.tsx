@@ -23,7 +23,7 @@ const AsciiArt = () => (
     </figure>
 )
 
-const Home: FC = () => {
+const MainLanding: FC = () => {
     return (
         <html lang="en">
             <head>
@@ -41,9 +41,9 @@ const Home: FC = () => {
                         <AsciiArt />
                         <section>
                             <nav aria-label="Main Navigation">
-                                <a href="/two">Home</a>
-                                <a href="/one">FAQ</a>
-                                <a href="/three">Mecanica</a>
+                                <a href="/home">Home</a>
+                                <a href="/faq">FAQ</a>
+                                <a href="/mk">Mecanica</a>
                                 <a href="/">Four</a>
                                 <a href="/">Five</a>
                             </nav>
@@ -56,4 +56,4 @@ const Home: FC = () => {
     )
 }
 
-export default Home
+export default MainLanding

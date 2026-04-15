@@ -1,6 +1,6 @@
 import { FC } from 'hono/jsx'
 
-const Two: FC = () => {
+const PlatformHome: FC = () => {
     return (
         <html lang="en">
             <head>
@@ -88,4 +88,4 @@ const Two: FC = () => {
     )
 }
 
-export default Two
+export default PlatformHome
