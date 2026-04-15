@@ -16,11 +16,11 @@ const FAQ: FC = () => {
                         <div class="faq-item" tabindex="0" onkeydown="if(event.key === 'Enter') this.querySelector('input').click()">
                             <input type="checkbox" id="faq1" class="faq-toggle" />
                             <label for="faq1" class="faq-question">
-                                ¿Que signgnifica cada link?
+                                ¿Que signnifica cada link?
                                 <span class="icon"></span>
                             </label>
                             <div class="faq-answer">
-                                <p>Cada link es una abreviatura para el problema que busca solucionar, /mk/ mecanica, /pnt/ pintura, /pl/ plomeria y asi sucesivamente, una descripcion mas detallada se encuentra en cada pagina</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis voluptate facilis ducimus placeat vero, qui provident, ratione porro architecto dolor saepe reiciendis odit hic recusandae, suscipit commodi aut exercitationem nesciunt.</p>
                             </div>
                         </div>
 
@@ -31,7 +31,7 @@ const FAQ: FC = () => {
                                 <span class="icon"></span>
                             </label>
                             <div class="faq-answer">
-                                <p>Los usuarios pueden tanto hacer peticiones para algun servicio o publicitar algun servicio que ofrecen, cada uno en su respectiva pagina para seguir las normas y en dicho post uno puede comentar para ofrecer ayuda o para pedir los servicios de otros</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, neque voluptate. Labore accusantium, assumenda modi temporibus numquam ratione dignissimos aspernatur corporis earum animi harum! Culpa nihil perferendis reiciendis deleniti et.</p>
                             </div>
                         </div>
 
@@ -42,7 +42,7 @@ const FAQ: FC = () => {
                                 <span class="icon"></span>
                             </label>
                             <div class="faq-answer">
-                                <p>Es un servicio que funciona completamente por la confianza de los usuarios, uno hace un buen trabajo y queda registrado el buen rendimiento que tuvo o una mala reseña si es que no fue el caso, nosotros como Paragraph nos encargamos de validar la autenticidad de las personas pero queda en manos de la comunidad verificar el rendimiento de cada uno. En caso que haya quejas por algún usuario de la plataforma tomaremos las medidas necesarias para soluionar el problema</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid modi officiis, enim molestias eligendi vitae odio iure voluptatum quos eum sed suscipit natus animi debitis voluptatem obcaecati repellendus itaque at.</p>
                             </div>
                         </div>
 
