@@ -13,7 +13,7 @@ export const ParagraphPostCard = ({ post }: { post: Post }) => {
             </div>
             <div class="post-content">
                 <div class="post-header">
-                    <span class="post-id">ID: {post.id}</span>
+                    <span class="post-id">{post.name} | {post.id}</span>
                     <span class="post-rating">{stars}</span>
                 </div>
                 <div class="post-body">
