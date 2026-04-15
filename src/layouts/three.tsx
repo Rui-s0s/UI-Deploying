@@ -26,7 +26,7 @@ const Three: FC<{ sort?: string; query?: string; category?: string }> = ({ sort,
             <head>
                 <meta charset="UTF-8" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                <title>/mk/ - Mecanica</title>
+                <title>/mk/ -  Mecanica</title>
                 <link rel="stylesheet" href="/css/three.css" />
                 <style>{`
                     .loading-overlay {

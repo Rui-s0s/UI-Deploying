@@ -1,8 +1,6 @@
 import { Hono } from 'hono'
 import routes from './routes/routes'
 import { getConnInfo } from 'hono/cloudflare-workers'
-import { serveStatic } from 'hono/cloudflare-workers'
-
 
 type Bindings = {
   DB: D1Database
@@ -10,8 +8,6 @@ type Bindings = {
 
 const app = new Hono<{ Bindings: Bindings }>()
 
-// Serve static files from the public directory
-app.use('/css/*', serveStatic())
 
 app.route('/', routes)
 
