@@ -1,6 +1,4 @@
 import { FC } from 'hono/jsx'
-import { ParagraphPostCard } from '../components/PostCard'
-import { hardcodedPosts } from '../models/posts'
 
 const Two: FC = () => {
     return (
