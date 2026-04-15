@@ -28,6 +28,7 @@ const Home: FC = () => {
         <html lang="en">
             <head>
                 <meta charset="UTF-8" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <title>Paragraph JSX</title>
                 <link rel="stylesheet" href="/css/home.css" />
             </head>
@@ -40,9 +41,11 @@ const Home: FC = () => {
                         <AsciiArt />
                         <section>
                             <nav aria-label="Main Navigation">
-                                <a href="/one">/one/</a>
-                                <a href="/two">/two/</a>
-                                <a href="/three">/three/</a>
+                                <a href="/two">Home</a>
+                                <a href="/one">FAQ</a>
+                                <a href="/three">Mecanica</a>
+                                <a href="/">Four</a>
+                                <a href="/">Five</a>
                             </nav>
                         </section>
                     </div>
