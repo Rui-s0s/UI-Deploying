@@ -14,7 +14,7 @@ const One: FC = () => {
                     <div class="faq-container">
                         <h1>Preguntas Frecuentes</h1>
 
-                        <div class="faq-item">
+                        <div class="faq-item" tabindex="0" onkeydown="if(event.key === 'Enter') this.querySelector('input').click()">
                             <input type="checkbox" id="faq1" class="faq-toggle" />
                             <label for="faq1" class="faq-question">
                                 ¿Que signgnifica cada link?
@@ -25,7 +25,7 @@ const One: FC = () => {
                             </div>
                         </div>
 
-                        <div class="faq-item">
+                        <div class="faq-item" tabindex="0" onkeydown="if(event.key === 'Enter') this.querySelector('input').click()">
                             <input type="checkbox" id="faq2" class="faq-toggle" />
                             <label for="faq2" class="faq-question">
                                 ¿Como se usa la pagina?
@@ -36,7 +36,7 @@ const One: FC = () => {
                             </div>
                         </div>
 
-                        <div class="faq-item">
+                        <div class="faq-item" tabindex="0" onkeydown="if(event.key === 'Enter') this.querySelector('input').click()">
                             <input type="checkbox" id="faq3" class="faq-toggle" />
                             <label for="faq3" class="faq-question">
                                 ¿Como puedo validar las capacidades de las personas que pienso contactar?

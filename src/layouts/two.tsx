@@ -11,7 +11,7 @@ const Two: FC = () => {
             </head>
             <body>
                 <main>
-                    <section class="hero-section">
+                    <section class="hero-section" tabindex="0">
                         <h1 class="hero-title">Paragraph</h1>
 
                         <div class="hero-subtitle-box">
@@ -19,14 +19,14 @@ const Two: FC = () => {
                         </div>
                     </section>
 
-                    <section id="about" class="intro-section">
+                    <section id="about" class="intro-section" tabindex="0">
                         <div class="content-wrapper">
                             <h2>Sobre Nosotros</h2>
                             <p>Paragraph es la plataforma que conecta a usuarios con profesionales de oficios como electricistas, plomeros, albañiles y carpinteros, facilitando el acceso a servicios confiables y de calidad en un solo lugar. A través de una interfaz simple e intuitiva, puedes encontrar proveedores verificados, solicitar servicios según tus necesidades específicas, comparar opciones y revisar calificaciones reales basadas en experiencias de otros usuarios. Además, Paragraph promueve una comunidad activa donde las personas pueden compartir reseñas, recomendar profesionales y generar confianza a partir de la transparencia y la interacción. Ya sea para resolver una urgencia o planificar un proyecto a largo plazo, la plataforma te ayuda a tomar decisiones informadas, optimizar tu tiempo y conectar con quienes mejor se adaptan a lo que buscas.</p>
                         </div>
                     </section>
 
-                    <div class="second-section-wrapper">
+                    <div class="second-section-wrapper" tabindex="0">
                         <div class="second-section">
                             <div class="second-section-image">
                                 <img
@@ -47,28 +47,28 @@ const Two: FC = () => {
                         </div>
                     </div>
 
-                    <div class="top-services-wrapper">
+                    <div class="top-services-wrapper" tabindex="0">
                         <div class="content-wrapper">
                             <section id="top_services">
-                                <div class="service-card">
+                                <div class="service-card" tabindex="0">
                                     <div class="service-text">PNT</div>
                                     <div class="service-image">
                                         <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=500&q=80" alt="Painting" />
                                     </div>
                                 </div>
-                                <div class="service-card">
+                                <div class="service-card" tabindex="0">
                                     <div class="service-text">MK</div>
                                     <div class="service-image">
                                         <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=500&q=80" alt="Mechanic" />
                                     </div>
                                 </div>
-                                <div class="service-card">
+                                <div class="service-card" tabindex="0">
                                     <div class="service-text">PL</div>
                                     <div class="service-image">
                                         <img src="https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=500&q=80" alt="Plumbing" />
                                     </div>
                                 </div>
-                                <div class="service-card">
+                                <div class="service-card" tabindex="0">
                                     <div class="service-text">ELC</div>
                                     <div class="service-image">
                                         <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=500&q=80" alt="Electrician" />
@@ -78,7 +78,7 @@ const Two: FC = () => {
                         </div>
                     </div>
 
-                    <div class="content-wrapper" style="text-align: center;">
+                    <div class="content-wrapper">
                         <a href="/" class="back-link">← Regresar al inicio</a>
                     </div>
                 </main>

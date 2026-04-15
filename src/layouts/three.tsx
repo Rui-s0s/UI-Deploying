@@ -14,7 +14,7 @@ const Three: FC = () => {
             <body>
                 <main>
                     <div class="content-wrapper">
-                        <h1>/mk/ - Mecanica</h1>
+                        <h1 tabindex="0">/mk/ - Mecanica</h1>
 
                         <form action="/search" method="get" class="search-filter-form">
                             <input type="text" name="query" placeholder="Search posts..." required />
@@ -33,7 +33,7 @@ const Three: FC = () => {
                             <button type="submit">Search</button>
                         </form>
 
-                        <div class="posts-feed">
+                        <div class="posts-feed" tabindex="0">
                             {hardcodedPosts.map(post => (
                                 <ParagraphPostCard post={post} />
                             ))}

@@ -4,7 +4,7 @@ export const ParagraphPostCard = ({ post }: { post: Post }) => {
     const stars = '★'.repeat(post.rating || 0) + '☆'.repeat(5 - (post.rating || 0));
 
     return (
-        <article class="paragraph-post-card">
+        <article class="paragraph-post-card" tabindex="0">
             <div class="post-media">
                 <img
                     src={post.imageUrl || "https://via.placeholder.com/300"}

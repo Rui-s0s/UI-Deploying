@@ -33,13 +33,6 @@ main {
     align-items: center;
     justify-content: center;
     gap: 1rem;
-
-    padding-bottom: 20px;
-    /* Space inside the box */
-    border-bottom: 3px solid red;
-    /* The actual red line */
-    margin-bottom: 10px;
-    /* Space outside the box */
 }
 
 .hero-title {
@@ -94,6 +87,9 @@ main {
     /* Tone 1: Base */
     padding: 4rem 0;
     text-align: center;
+
+    outline: 3px solid red;
+    outline-offset: -10px;
 }
 
 #about {
@@ -105,18 +101,18 @@ main {
     /* Tone 2: Cornsilk */
     width: 100%;
     padding: 2rem 0;
-
-    padding-top: 20px;
-    /* Space inside the box */
-    border-top: 3px solid red;
-    /* The actual red line */
-    margin-top: 10px;
-    /* Space outside the box */
 }
 
 
 .top-services-wrapper {
-    background-color: #f5f5dc;
+
+    /* Top styling */
+    padding-top: 20px;
+    border-top: 3px solid red;
+    margin-top: 10px;
+
+    background-color: #ffffee;
+
     /* Tone 4: Beige */
     width: 100%;
     padding: 4rem 0;
@@ -301,6 +297,10 @@ footer {
 }
 
 @media (max-width: 600px) {
+    .hero-section {
+        gap: 3rem;
+    }
+
     .hero-title {
         font-size: 2.5rem;
         letter-spacing: 4px;
