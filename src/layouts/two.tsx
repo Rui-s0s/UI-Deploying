@@ -7,6 +7,7 @@ const PlatformHome: FC = () => {
                 <meta charset="UTF-8" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <title>Paragraph - Modern Trades Platform</title>
+                <link rel="preload" as="image" href="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=60" />
                 <link rel="stylesheet" href="/css/two.css" />
             </head>
             <body>
@@ -30,8 +31,10 @@ const PlatformHome: FC = () => {
                         <div class="second-section">
                             <div class="second-section-image">
                                 <img
-                                    src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=800&q=80"
+                                    src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=800&q=50"
                                     alt="Profesional trabajando"
+                                    loading="lazy"
+                                    decoding="async"
                                 />
                             </div>
                             <div class="right-side-column">
@@ -53,25 +56,25 @@ const PlatformHome: FC = () => {
                                 <div class="service-card" tabindex="0">
                                     <div class="service-text">PNT</div>
                                     <div class="service-image">
-                                        <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=500&q=80" alt="Painting" />
+                                        <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=400&q=50" alt="Painting" loading="lazy" decoding="async" />
                                     </div>
                                 </div>
                                 <div class="service-card" tabindex="0">
                                     <div class="service-text">MK</div>
                                     <div class="service-image">
-                                        <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=500&q=80" alt="Mechanic" />
+                                        <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=400&q=50" alt="Mechanic" loading="lazy" decoding="async" />
                                     </div>
                                 </div>
                                 <div class="service-card" tabindex="0">
                                     <div class="service-text">PL</div>
                                     <div class="service-image">
-                                        <img src="https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=500&q=80" alt="Plumbing" />
+                                        <img src="https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=400&q=50" alt="Plumbing" loading="lazy" decoding="async" />
                                     </div>
                                 </div>
                                 <div class="service-card" tabindex="0">
                                     <div class="service-text">ELC</div>
                                     <div class="service-image">
-                                        <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=500&q=80" alt="Electrician" />
+                                        <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=400&q=50" alt="Electrician" loading="lazy" decoding="async" />
                                     </div>
                                 </div>
                             </section>
