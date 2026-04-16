@@ -7,7 +7,7 @@ const PlatformHome: FC = () => {
                 <meta charset="UTF-8" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <title>Paragraph - Modern Trades Platform</title>
-                <link rel="preload" as="image" href="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=60" />
+                <link rel="preload" as="image" href="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fm=webp&fit=crop&w=1200&q=60" fetchpriority="high" />
                 <link rel="stylesheet" href="/css/two.css" />
             </head>
             <body>
@@ -31,10 +31,11 @@ const PlatformHome: FC = () => {
                         <div class="second-section">
                             <div class="second-section-image">
                                 <img
-                                    src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=800&q=50"
+                                    src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fm=webp&fit=crop&w=800&q=50"
                                     alt="Profesional trabajando"
-                                    loading="lazy"
+                                    loading="eager"
                                     decoding="async"
+                                    fetchpriority="high"
                                 />
                             </div>
                             <div class="right-side-column">
@@ -56,25 +57,25 @@ const PlatformHome: FC = () => {
                                 <div class="service-card" tabindex={0}>
                                     <div class="service-text">Pintura</div>
                                     <div class="service-image">
-                                        <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=400&q=50" alt="Painting" loading="lazy" decoding="async" />
+                                        <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fm=webp&fit=crop&w=400&q=50" alt="Painting" loading="lazy" decoding="async" />
                                     </div>
                                 </div>
                                 <a class="service-card" tabindex={0} href="/mk" style="text-decoration: none;">
                                     <div class="service-text">Mecanica</div>
                                     <div class="service-image">
-                                        <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=400&q=50" alt="Mechanic" loading="lazy" decoding="async" />
+                                        <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fm=webp&fit=crop&w=400&q=50" alt="Mechanic" loading="lazy" decoding="async" />
                                     </div>
                                 </a>
                                 <div class="service-card" tabindex={0}>
                                     <div class="service-text">Plomeria</div>
                                     <div class="service-image">
-                                        <img src="https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=400&q=50" alt="Plumbing" loading="lazy" decoding="async" />
+                                        <img src="https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fm=webp&fit=crop&w=400&q=50" alt="Plumbing" loading="lazy" decoding="async" />
                                     </div>
                                 </div>
                                 <div class="service-card" tabindex={0}>
                                     <div class="service-text">Electricidad</div>
                                     <div class="service-image">
-                                        <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=400&q=50" alt="Electrician" loading="lazy" decoding="async" />
+                                        <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fm=webp&fit=crop&w=400&q=50" alt="Electrician" loading="lazy" decoding="async" />
                                     </div>
                                 </div>
                             </section>

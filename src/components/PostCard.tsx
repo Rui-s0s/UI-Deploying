@@ -1,12 +1,14 @@
 import { Post } from '../types';
 
-export const ParagraphPostCard = ({ post }: { post: Post }) => {
+export const ParagraphPostCard = ({ post, index }: { post: Post, index?: number }) => {
     const stars = '★'.repeat(post.rating || 0) + '☆'.repeat(5 - (post.rating || 0));
 
-    // Optimize Unsplash images: reduce quality and size
+    // Optimize Unsplash images: use WebP, reduce quality and size
     const optimizedImageUrl = post.imageUrl
-        ? post.imageUrl.replace('w=800&q=80', 'w=500&q=50')
+        ? post.imageUrl.replace('auto=format&fit=crop&w=800&q=80', 'auto=format&fm=webp&fit=crop&w=500&q=50')
         : "https://via.placeholder.com/300";
+
+    const isLCP = index === 0;
 
     return (
         <article class="paragraph-post-card" tabindex={0}>
@@ -14,8 +16,9 @@ export const ParagraphPostCard = ({ post }: { post: Post }) => {
                 <img
                     src={optimizedImageUrl}
                     alt={post.content}
-                    loading="lazy"
+                    loading={isLCP ? "eager" : "lazy"}
                     decoding="async"
+                    fetchpriority={isLCP ? "high" : "auto"}
                 />
             </div>
             <div class="post-content">
