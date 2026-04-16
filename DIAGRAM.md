@@ -38,29 +38,34 @@ graph TD
     Index --> Routes
     
     Routes -- "/" --> Home
-    Routes -- "/one" --> One
-    Routes -- "/two" --> Two
-    Routes -- "/three" --> Three
+    Routes -- "/faq" --> One
+    Routes -- "/home" --> Two
+    Routes -- "/mk" --> Three
     
-    %% Three Layout specifics
+    %% Layout specifics
     Three --> PostCardComp
     Three --> CSS_Three
-    
-    %% Components and Types
-    PostCardComp -.-> Types
-    Three -.-> Types
-    Routes -.-> Types
-    
-    %% Other Styles
     Home --> CSS_Home
     One --> CSS_One
     Two --> CSS_Two
+    
+    %% Data and Types
+    PostCardComp -.-> Types
+    Three -.-> Types
+    Routes -.-> Types
 ```
+
+### How to View This Diagram
+
+You can visualize this Mermaid diagram in several ways:
+
+1.  **VS Code:** Install the **"Markdown Preview Mermaid Support"** extension. Then, open this file and press `Ctrl+Shift+V` to see the rendered graph.
+2.  **GitHub:** GitHub natively renders Mermaid blocks in `.md` files. Just push this file to a repository to see it.
+3.  **Mermaid Live Editor:** Copy the code block above and paste it into [Mermaid.live](https://mermaid.live/).
 
 ### Key Relationships
 
-- **Entry Point**: `src/index.tsx` initializes the application.
+- **Entry Point**: `src/index.tsx` initializes the Hono application.
 - **Routing**: `src/routes/routes.tsx` handles URL mapping to different layout components.
-- **Layouts**: Each page (Home, One, Two, Three) has its own layout file and dedicated CSS file in `public/css/`.
-- **Page Three**: Specifically uses the `ParagraphPostCard` component (defined in `PostCard.tsx`) to display posts according to the site's maroon aesthetic.
-- **Data Types**: `src/types.ts` defines the `Post` and `Comment` interfaces used throughout the application to ensure data consistency.
+- **Layouts**: Each page has a dedicated layout file. Page **Two** is optimized for high performance (Semantic HTML + LCP optimizations), while Page **Three** (`/mk`) handles the dynamic filtering of trade posts.
+- **Post Components**: `src/components/PostCard.tsx` is the reusable unit for displaying trade professionals.
