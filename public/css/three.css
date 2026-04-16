@@ -1,3 +1,7 @@
+/* 
+Main styles for the /mk (Mecanica) page.
+Uses a vertical layout that centers the content wrapper.
+*/
 body {
     font-family: "Trebuchet MS", "Verdana", "Arial", sans-serif;
     background-color: #ffffee;
@@ -31,7 +35,11 @@ h1 {
     color: #800000;
 }
 
-/* Filter Form Styles */
+/* 
+FILTER FORM:
+The search bar and dropdowns. 
+Uses Flexbox to allow items to wrap on smaller screens.
+*/
 .search-filter-form {
     background: #fffdf0;
     border: 1px solid #d3d3af;
@@ -64,7 +72,11 @@ h1 {
     background: #ff0000;
 }
 
-/* Post Card Styles (Paragraph Aesthetic) */
+/* 
+POST CARDS:
+Displays each trade professional's post.
+Alternates background colors for a 'zebra' effect using nth-child(even).
+*/
 .paragraph-post-card {
     display: flex;
     background: #f5f5dc;
@@ -130,6 +142,12 @@ h1 {
     align-items: center;
 }
 
+/* 
+STAR RATING LOGIC:
+Uses row-reverse to flip the order of stars (5-4-3-2-1 becomes 1-2-3-4-5).
+This allows the '~' (sibling) selector to color stars to the 'left' 
+even though CSS usually only looks 'right'.
+*/
 .star-rating-input {
     display: flex;
     flex-direction: row-reverse;
@@ -137,6 +155,7 @@ h1 {
     gap: 5px;
 }
 
+/* Hide the radio buttons, the user only sees the stars (labels) */
 .star-rating-input input {
     display: none;
 }
@@ -149,7 +168,11 @@ h1 {
     line-height: 1;
 }
 
-
+/* 
+When a star is hovered OR selected, color it and all 'previous' stars.
+In a row-reverse flex container, 'previous' stars on screen are 
+actually 'following' siblings in the HTML code.
+*/
 .star-rating-input label:hover,
 .star-rating-input label:hover~label,
 .star-rating-input input:checked~label {
@@ -174,7 +197,11 @@ h1 {
     text-decoration: none;
 }
 
-/* Rating Modal Styles */
+/* 
+RATING MODAL:
+Styles for the <dialog> pop-up.
+Uses '::backdrop' to dim the rest of the page when open.
+*/
 .rate-modal {
     border: 2px solid #800000;
     background: #fffdf0;
@@ -264,6 +291,7 @@ footer {
         text-align: center;
     }
 
+    /* Stack card elements vertically on mobile */
     .paragraph-post-card {
         flex-direction: column;
     }

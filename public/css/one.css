@@ -1,3 +1,8 @@
+/* 
+Standard body setup for Page One (FAQ).
+Uses Flexbox with 'flex-direction: column' and 'flex: 1' on main 
+to ensure the footer stays at the bottom even with little content.
+*/
 body {
 	font-family: "Trebuchet MS", "Verdana", "Arial", sans-serif;
 	background-color: #ffffee;
@@ -48,14 +53,19 @@ h1 {
 	overflow: hidden;
 }
 
-/* .faq-item:nth-child(even) {
-	background: #f8f8e7;
-} */
-
+/* 
+THE CHECKBOX HACK:
+1: Hide the actual checkbox input from the user.
+We only use it to store the 'checked' state (on/off).
+*/
 .faq-toggle {
 	display: none;
 }
 
+/*
+2: The Question acts as the 'trigger'. 
+It is a <label> linked to the hidden checkbox.
+*/
 .faq-question {
 	display: flex;
 	justify-content: space-between;
@@ -74,6 +84,7 @@ h1 {
 	color: #ff0000;
 }
 
+/* Visual indicator for the accordion state */
 .icon::before {
 	content: '[+]';
 	font-family: monospace;
@@ -81,22 +92,36 @@ h1 {
 	color: #004a99;
 }
 
+/*
+3: The Answer is hidden by default.
+'max-height: 0' and 'overflow: hidden' make it invisible.
+*/
 .faq-answer {
 	max-height: 0;
 	padding: 0 20px;
 	background-color: #fffff5;
 	transition: all 0.3s ease;
+	/* Makes the opening/closing smooth */
 	color: #800000;
 	line-height: 1.6;
 	overflow: hidden;
 }
 
+/*
+4: The Logic.
+When the hidden checkbox is :checked, find its sibling (.faq-answer) 
+and expand its max-height.
+*/
 .faq-toggle:checked~.faq-answer {
 	max-height: 500px;
+	/* Large enough value to fit the content */
 	padding: 10px 20px 20px 20px;
 	border-top: 1px dashed #d3d3af;
 }
 
+/* 
+5: Update the icon to show it is open 
+*/
 .faq-toggle:checked~.faq-question .icon::before {
 	content: '[-]';
 }

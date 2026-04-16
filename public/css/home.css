@@ -1,3 +1,7 @@
+/* 
+Erase any border and make everything ocupy the whole screen
+Setup grid to make the footer stick to the bottom 
+*/
 body {
 	font-family: "Trebuchet MS", "Verdana", "Arial", sans-serif;
 	background-color: #ffffee;
@@ -7,8 +11,13 @@ body {
 	min-height: 100vh;
 	display: grid;
 	grid-template-rows: 1fr auto auto 1fr auto;
+	/* Creates flexible gaps to center content vertically */
 }
 
+/*
+The container of the header.
+'margin: 0 auto' centers it horizontally by splitting available side space.
+*/
 header {
 	grid-row: 2;
 	margin: 0 auto;
@@ -20,6 +29,10 @@ header {
 	text-align: left;
 }
 
+/*
+Main content area. 
+Centers the content and ensures it takes up the full width available.
+*/
 main {
 	grid-row: 3;
 	display: flex;
@@ -29,6 +42,10 @@ main {
 	margin: 0 auto;
 }
 
+/*
+Inner wrapper for the main content to handle layout between 
+the ASCII art and the navigation menu.
+*/
 main>div {
 	display: flex;
 	flex-direction: row;
@@ -43,6 +60,10 @@ figure {
 	margin: 0;
 }
 
+/*
+Styles for the ASCII art. 
+Uses a monospaced font and prevents text wrapping to keep the art intact.
+*/
 pre {
 	margin: 0;
 	font-family: "Courier New", Courier, monospace;
@@ -63,11 +84,14 @@ section {
 }
 
 h1 {
-	font-size: 2em;
 	margin: 0 0 10px 0;
 	color: #800000;
 }
 
+/*
+The menu links. 
+Uses a 2-column grid layout.
+*/
 nav {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -75,6 +99,9 @@ nav {
 	max-width: 500px;
 }
 
+/*
+The first link (Home) spans across both columns to act as a primary button.
+*/
 nav a:first-child {
 	grid-column: 1 / span 2;
 	text-align: center;
@@ -120,6 +147,9 @@ footer {
 	background-color: #ffffee;
 }
 
+/* 
+Responsive adjustments for tablets and smaller screens 
+*/
 @media (max-width: 900px) {
 	main>div {
 		flex-direction: row;
@@ -136,7 +166,7 @@ footer {
 
 	h1 {
 		text-align: center;
-		font-size: 1.8rem;
+		font-size: 2rem;
 	}
 
 	section {

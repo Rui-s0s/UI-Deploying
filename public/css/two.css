@@ -1,9 +1,11 @@
+/* 
+Main layout settings for Page Two.
+Uses Flexbox to push the footer to the very bottom of the screen.
+*/
 body {
     font-family: "Trebuchet MS", "Verdana", "Arial", sans-serif;
     background-color: #ffffee;
-    /* Base beige from root */
     color: #800000;
-    /* Maroon from root */
     margin: 0;
     min-height: 100vh;
     display: flex;
@@ -14,6 +16,9 @@ main {
     width: 100%;
 }
 
+/* 
+Standard container to keep content centered and readable 
+*/
 .content-wrapper {
     max-width: 1000px;
     width: 90%;
@@ -21,7 +26,11 @@ main {
     padding: 2rem 0;
 }
 
-/* Hero Section */
+/* 
+HERO SECTION:
+The large introductory banner at the top of the page.
+Uses 'vh' (viewport height) to take up 70% of the screen.
+*/
 .hero-section {
     height: 70vh;
     background-image: url('https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fm=webp&fit=crop&w=1200&q=60');
@@ -46,24 +55,21 @@ main {
     z-index: 2;
 }
 
+/* Highlight bar behind the hero title */
 .hero-title::before {
     content: "";
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100vw;
-
-    /* 3. Set the height and position it vertically in the middle of the text */
     height: 4.5rem;
     top: 50%;
-
     background: rgba(255, 233, 160, 0.75);
     z-index: -1;
 }
 
 .hero-subtitle-box {
     background: rgba(255, 255, 238, 0.9);
-    /* Matching body beige but semi-transparent */
     padding: 1.5rem 3rem;
     border-radius: 4px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
@@ -80,52 +86,38 @@ main {
     text-align: center;
 }
 
-/* Section Colors - Tones of Beige */
-
+/* 
+MISSION SECTION:
+The 'Sobre Nosotros' and detailed info area.
+Uses subtle variations of beige to separate information sections.
+*/
 .intro-section {
     background-color: #ffffee;
-    /* Tone 1: Base */
     padding: 4rem 0;
     text-align: center;
-
-    outline: 3px solid red;
+    outline: 3px solid red; /* Design choice to highlight the box */
     outline-offset: -10px;
-}
-
-#about {
-    margin-top: 0;
 }
 
 .second-section-wrapper {
     background-color: #fff8dc;
-    /* Tone 2: Cornsilk */
     width: 100%;
     padding: 2rem 0;
 }
 
-
 .top-services-wrapper {
-
-    /* Top styling */
     padding-top: 20px;
     border-top: 3px solid red;
     margin-top: 10px;
-
     background-color: #ffffee;
-
-    /* Tone 4: Beige */
     width: 100%;
     padding: 4rem 0;
 }
 
-/* Component Styles */
-
-.intro-section h2 {
-    font-size: 2.5rem;
-    color: #800000;
-    margin-bottom: 1.5rem;
-}
-
+/* 
+FLEX LAYOUT:
+Allows the image and the text boxes to sit side-by-side.
+*/
 .second-section {
     display: flex;
     gap: 1rem;
@@ -138,15 +130,12 @@ main {
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-    /* Remove background-image and background-size from here */
 }
 
 .second-section-image img {
     width: 100%;
     height: 100%;
-    /* Important: it fills the flex container */
-    object-fit: cover;
-    /* This is the secret sauce to replace 'background-size: cover' */
+    object-fit: cover; /* Ensures the image fills the space without stretching */
     display: block;
 }
 
@@ -155,6 +144,10 @@ main {
     display: flex;
 }
 
+/* 
+GRID BOX:
+The 'mosaic' look for the text on the right side of the mission section.
+*/
 .right-box-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -176,7 +169,6 @@ main {
     line-height: 1.5;
     font-size: 1.1rem;
     text-align: justify;
-    hyphens: auto;
 }
 
 .small-corner-box {
@@ -192,12 +184,22 @@ main {
     font-weight: bold;
 }
 
+/* 
+SERVICES GRID:
+The list of trade cards (Pintura, Mecanica, etc.)
+*/
 #top_services {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.5rem;
 }
 
+/*
+INTERACTIVE CARDS:
+These respond to the mouse hover.
+Note: To 'show more content' on Page Three, we use the <dialog> tag in HTML 
+and its '::backdrop' styles in 'three.css'.
+*/
 .service-card {
     background-color: white;
     color: #800000;
@@ -209,7 +211,7 @@ main {
     overflow: hidden;
     border-radius: 8px;
     border: 1px solid #d3d3af;
-    transition: all 0.2s;
+    transition: all 0.2s; /* Creates the smooth hover animation */
     cursor: pointer;
     height: 120px;
 }
@@ -222,6 +224,7 @@ main {
     text-align: left;
 }
 
+/* Zebra striping: Flips the image and text every other card */
 .service-card:nth-child(even) {
     flex-direction: row-reverse;
 }
@@ -242,6 +245,10 @@ main {
     object-fit: cover;
 }
 
+/* 
+HOVER ANIMATION:
+Scales the card slightly and swaps the colors when the mouse is over it.
+*/
 .service-card:hover {
     background-color: #800000;
     color: white;
@@ -276,6 +283,10 @@ footer {
     background-color: #ffffee;
 }
 
+/* 
+MOBILE RESPONSIVENESS:
+Rearranges the layout for smaller screens.
+*/
 @media (max-width: 900px) {
     .hero-title {
         font-size: 3.5rem;
@@ -349,6 +360,5 @@ footer {
     .small-corner-box {
         padding: 1rem;
         grid-column: 1 / span 2;
-        /* Full width on mobile for better readability */
     }
 }
