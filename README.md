@@ -100,3 +100,9 @@ Once finished, Wrangler will provide you with a `*.workers.dev` URL where your s
 - `public/`: Static assets (CSS, images).
 - `wrangler.jsonc`: Cloudflare Workers configuration.
 - `schema.sql`: Database schema definition.
+
+
+## Lighthouse Setup
+```bash
+npx unlighthouse --site YOUR_SITE
+```
