@@ -73,7 +73,7 @@ const Three: FC<{ sort?: string; query?: string; category?: string }> = ({ sort,
                             <button type="submit">Search</button>
                         </form>
 
-                        <div class="posts-feed" tabindex="0">
+                        <div class="posts-feed" tabindex={0}>
                             {posts.length > 0 ? (
                                 posts.map((post, index) => (
                                     <ParagraphPostCard post={post} index={index} />
