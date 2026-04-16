@@ -54,7 +54,7 @@ const Three: FC<{ sort?: string; query?: string; category?: string }> = ({ sort,
                 <div id="loader" class="loading-overlay">FETCHING DATA...</div>
                 <main>
                     <div class="content-wrapper">
-                        <h1 tabindex="0">/mk/ - Mecanica</h1>
+                        <h1 tabindex={0}>/mk/ - Mecanica</h1>
 
                         <form action="/mk" method="get" class="search-filter-form" onsubmit="document.getElementById('loader').style.display='flex'">
                             <input type="text" name="query" placeholder="Search..." value={query || ''} />
@@ -73,7 +73,7 @@ const Three: FC<{ sort?: string; query?: string; category?: string }> = ({ sort,
                             <button type="submit">Search</button>
                         </form>
 
-                        <div class="posts-feed" tabindex="0">
+                        <div class="posts-feed" tabindex={0}>
                             {posts.length > 0 ? (
                                 posts.map(post => (
                                     <ParagraphPostCard post={post} />

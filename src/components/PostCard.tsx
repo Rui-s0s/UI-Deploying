@@ -4,12 +4,12 @@ export const ParagraphPostCard = ({ post }: { post: Post }) => {
     const stars = '★'.repeat(post.rating || 0) + '☆'.repeat(5 - (post.rating || 0));
 
     // Optimize Unsplash images: reduce quality and size
-    const optimizedImageUrl = post.imageUrl 
+    const optimizedImageUrl = post.imageUrl
         ? post.imageUrl.replace('w=800&q=80', 'w=500&q=50')
         : "https://via.placeholder.com/300";
 
     return (
-        <article class="paragraph-post-card" tabindex="0">
+        <article class="paragraph-post-card" tabindex={0}>
             <div class="post-media">
                 <img
                     src={optimizedImageUrl}
