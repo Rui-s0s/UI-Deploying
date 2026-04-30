@@ -3,12 +3,15 @@ import Home from '../layouts/home'
 import One from '../layouts/one'
 import Two from '../layouts/two'
 import Three from '../layouts/three'
+import ComingSoon from '../layouts/soon'
 
 const routes = new Hono()
 
 routes.get('/', (c) => c.html(<Home />))
 routes.get('/faq', (c) => c.html(<One />))
 routes.get('/home', (c) => c.html(<Two />))
+routes.get('/plm', (c) => c.html(<ComingSoon pageTitle='/plm/ - Plomeria' />))
+routes.get('/el', (c) => c.html(<ComingSoon pageTitle='/el/ - Electricidad'/>))
 const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms))
 
 routes.get('/mk', async (c) => {

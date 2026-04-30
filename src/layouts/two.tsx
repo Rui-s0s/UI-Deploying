@@ -54,30 +54,24 @@ const PlatformHome: FC = () => {
                     <div class="top-services-wrapper" tabindex={0}>
                         <div class="content-wrapper">
                             <section id="top_services">
-                                <div class="service-card" tabindex={0}>
-                                    <div class="service-text">Pintura</div>
-                                    <div class="service-image">
-                                        <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fm=webp&fit=crop&w=400&q=50" alt="Painting" loading="lazy" decoding="async" />
-                                    </div>
-                                </div>
                                 <a class="service-card" tabindex={0} href="/mk" style="text-decoration: none;">
                                     <div class="service-text">Mecanica</div>
                                     <div class="service-image">
                                         <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fm=webp&fit=crop&w=400&q=50" alt="Mechanic" loading="lazy" decoding="async" />
                                     </div>
                                 </a>
-                                <div class="service-card" tabindex={0}>
-                                    <div class="service-text">Plomeria</div>
+                                <a class="service-card" tabindex={0} href="/plm" style="text-decoration: none;">
+                                    <div class="service-text">Plomeria </div>
                                     <div class="service-image">
                                         <img src="https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fm=webp&fit=crop&w=400&q=50" alt="Plumbing" loading="lazy" decoding="async" />
                                     </div>
-                                </div>
-                                <div class="service-card" tabindex={0}>
+                                </a>
+                                <a class="service-card" tabindex={0} href="/el" style="text-decoration: none;">
                                     <div class="service-text">Electricidad</div>
                                     <div class="service-image">
                                         <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fm=webp&fit=crop&w=400&q=50" alt="Electrician" loading="lazy" decoding="async" />
                                     </div>
-                                </div>
+                                </a>
                             </section>
                         </div>
                     </div>

@@ -44,8 +44,8 @@ const MainLanding: FC = () => {
                                 <a href="/home">Home</a>
                                 <a href="/faq">FAQ</a>
                                 <a href="/mk">Mecanica</a>
-                                <a href="/">Four</a>
-                                <a href="/">Five</a>
+                                <a href="/plm">Plomeria</a>
+                                <a href="/el">Electricidad</a>
                             </nav>
                         </section>
                     </div>
