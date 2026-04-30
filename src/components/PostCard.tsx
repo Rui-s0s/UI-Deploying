@@ -30,9 +30,22 @@ export const ParagraphPostCard = ({ post, index }: { post: Post, index?: number 
                     {post.content}
                 </div>
                 <div class="post-actions">
-                    <button class="action-btn">Show More</button>
+                    <button class="action-btn" onclick={`document.getElementById('details-modal-${post.id}').showModal()`}>Show More</button>
                     <button class="action-btn" onclick={`document.getElementById('rate-modal-${post.id}').showModal()`}>Rate</button>
                 </div>
+
+                <dialog id={`details-modal-${post.id}`} class="rate-modal">
+                    <form method="dialog">
+                        <h3>Post Details</h3>
+                        <div class="details-body">
+                            <p><strong>Phone:</strong> +595 981 123 456</p>
+                            <p><strong>Location:</strong> Asunción, Paraguay</p>
+                        </div>
+                        <div class="modal-actions">
+                            <button type="button" onclick={`document.getElementById('details-modal-${post.id}').close()`}>Close</button>
+                        </div>
+                    </form>
+                </dialog>
 
                 <dialog id={`rate-modal-${post.id}`} class="rate-modal">
                     <form method="dialog">
