@@ -32,7 +32,7 @@ export const hardcodedPosts: Post[] = [
         timestamp: '4h',
         likes: 33,
         rating: 3,
-        imageUrl: 'https://images.unsplash.com/photo-1621905235294-7500bed49da3?auto=format&fit=crop&w=800&q=80'
+        imageUrl: 'https://images.unsplash.com/photo-1678182885384-1b5f39319f30?auto=format&fit=crop&w=800&q=80'
     },
     {
         id: 'FF001A88',
